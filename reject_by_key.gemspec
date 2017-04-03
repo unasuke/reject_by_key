@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q(Hash#reject_by_key is return hash that rejected passed key element.)
   spec.homepage      = %q(https://github.com/unasuke/reject_by_key)
   spec.license       = "MIT"
+  spec.required_ruby_version = '~> 2.2'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
