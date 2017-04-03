@@ -1,8 +1,6 @@
-# RejectByKey
+# reject_by_key
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/reject_by_key`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Implementation of the `Hash#reject_by_key`.
 
 ## Installation
 
@@ -22,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'reject_by_key'
+
+{'one' => 1, 'two' => 2, 'three' => 3}.reject_by_key('two')
+#=> {'one' => 1, 'three' => 3}
+
+{one: 1, two: 2, three: 3}.reject_by_key(:two)
+#=> {one: 1, three: 3}
+
+{one: 1, two: 2, three: 3}.reject_by_key('two')
+#=> {one: 1, two: 2, three: 3}
+```
 
 ## Development
 
@@ -32,7 +41,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Yusuke Nakamura/reject_by_key.
+Bug reports and pull requests are welcome on GitHub at https://github.com/unasuke/reject_by_key.
 
 
 ## License
