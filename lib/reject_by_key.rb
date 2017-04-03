@@ -1,5 +1,9 @@
 require "reject_by_key/version"
 
-module RejectByKey
-  # Your code goes here...
+class Hash
+  def reject_by_key(key)
+    self.reject do |k, v|
+      k == key
+    end
+  end
 end
