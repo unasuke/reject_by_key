@@ -1,4 +1,5 @@
 # reject_by_key
+[![Build Status](https://travis-ci.org/unasuke/reject_by_key.svg?branch=master)](https://travis-ci.org/unasuke/reject_by_key)
 
 Implementation of the `Hash#reject_by_key`.
 
